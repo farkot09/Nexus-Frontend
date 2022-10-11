@@ -10,6 +10,7 @@ import UserPreferencesPage from './pages/profile/UserPreferencesPage'
 import AdminBlankPage from './pages/AdminBlankPage';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Reservas from './pages/Reservas';
+import Asignaciones from "./pages/Asignaciones"
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
             <Routes>
                 <Route exact path='/' element={<DashboardPage/>} />
                 <Route exact path='/Reservas' element={<Reservas/>} />
-
+                <Route exact path='/Asignaciones/:idAsignacion' element={<Asignaciones/>} />
                 <Route exact path='/login' element={<LoginPage/>} />
                 <Route exact path='/reset-password' element={<ResetPassword/>} />
                 <Route exact path='/profile' element={<ProfilePage/>} />

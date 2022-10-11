@@ -29,6 +29,11 @@ class Sidebar extends React.Component {
                             <i className="fa fa-file-o"></i> Reservas
                         </Link>
                     </li>
+                    <li className="mb-1">
+                        <Link tag="a" className="" to="/Asignaciones">
+                            <i className="fa fa-file-o"></i> Asignaciones
+                        </Link>
+                    </li>
                     <li className="border-top my-3"></li>
                     <li className="mb-1">
                         <Link tag="a" className="" to="/typography">
